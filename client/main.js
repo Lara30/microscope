@@ -2,6 +2,8 @@ import { Template } from 'meteor/templating';
 import { ReactiveVar } from 'meteor/reactive-var';
 
 import './main.html';
+//afin de souscrire à la publication
+Meteor.subscribe('posts');
 
 Template.hello.onCreated(function helloOnCreated() {
   // counter starts at 0
@@ -20,3 +22,4 @@ Template.hello.events({
     instance.counter.set(instance.counter.get() + 1);
   },
 });
+
