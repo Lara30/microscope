@@ -9,6 +9,6 @@ if (Posts.find().count() === 0) {
     });
     Posts.insert ({
         title: 'The Meteor Book',
-        url: 'http://themobook.com'
+        url: 'http://themeteorbook.com'
     });
 }

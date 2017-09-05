@@ -1,0 +1,16 @@
+<template name="layout">
+    <div class="container">
+        {{>header}}
+    <!--<header class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="{{pathFor 'postsList'}}">{{pageTitle}}</a>
+        </div>
+    </header>-->
+
+<!--nous ne définissons pas le contenu de cette balise nous-mme, à la place, nous allons
+pointer le routeur vers un template spécial qui contient un helper de template : le template de routage!-->
+        <div id="main">
+            {{> yield}}
+        </div>
+    </div>
+</template>
